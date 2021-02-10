@@ -4,7 +4,7 @@ const router = express.Router();
 var Op = models.Sequelize.Op;
 
 // Update userInfo
-//localhost:3001/api/user/profile?stu_id=samdol
+//localhost:3001/api/user/profile/samdol
 router.put('/:stu_id', function (req, res, next) {
   const id = req.params.stu_id;
   let body = req.body;
